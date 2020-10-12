@@ -10,19 +10,19 @@ Rev ""
 Comp ""
 Comment1 "https://github.com/545ch4/flippie"
 Comment2 "Based on Flippie flipdot controller by 545ch4"
-Comment3 "https://github.com/javl/flipdot-controller"
+Comment3 "https://github.com/javl/flipdot"
 Comment4 "By Jasper van Loenen"
 $EndDescr
 $Comp
-L 74xx:74HC595 U12
+L 74xx:74HC595 U1
 U 1 1 5F832564
 P 1900 1450
-F 0 "U12" H 1900 2231 50  0000 C CNN
+F 0 "U1" H 1900 2231 50  0000 C CNN
 F 1 "74HC595" H 1900 2140 50  0000 C CNN
-F 2 "" H 1900 1450 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1900 1450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1900 1450 50  0001 C CNN
 	1    1900 1450
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 2400 1050 2    50   Input ~ 0
 SR1
@@ -52,17 +52,6 @@ Wire Wire Line
 	2400 1650 2300 1650
 Wire Wire Line
 	2300 1750 2400 1750
-$Comp
-L 74xx:74HC595 U13
-U 1 1 5F846E39
-P 1900 3050
-F 0 "U13" H 1900 3831 50  0000 C CNN
-F 1 "74HC595" H 1900 3740 50  0000 C CNN
-F 2 "" H 1900 3050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1900 3050 50  0001 C CNN
-	1    1900 3050
-	1    0    0    -1
-$EndComp
 Text GLabel 2400 2650 2    50   Input ~ 0
 SR9
 Text GLabel 2400 2750 2    50   Input ~ 0
@@ -96,15 +85,15 @@ Wire Wire Line
 Wire Wire Line
 	2300 3350 2400 3350
 $Comp
-L 74xx:74HC595 U14
+L 74xx:74HC595 U3
 U 1 1 5F860B48
 P 1900 4650
-F 0 "U14" H 1900 5431 50  0000 C CNN
+F 0 "U3" H 1900 5431 50  0000 C CNN
 F 1 "74HC595" H 1900 5340 50  0000 C CNN
-F 2 "" H 1900 4650 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1900 4650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1900 4650 50  0001 C CNN
 	1    1900 4650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 2400 4250 2    50   Input ~ 0
 SR17
@@ -139,15 +128,15 @@ Wire Wire Line
 Wire Wire Line
 	2300 4950 2400 4950
 $Comp
-L 74xx:74HC595 U15
+L 74xx:74HC595 U4
 U 1 1 5F860B65
 P 1900 6250
-F 0 "U15" H 1900 7031 50  0000 C CNN
+F 0 "U4" H 1900 7031 50  0000 C CNN
 F 1 "74HC595" H 1900 6940 50  0000 C CNN
-F 2 "" H 1900 6250 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1900 6250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1900 6250 50  0001 C CNN
 	1    1900 6250
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 2400 5850 2    50   Input ~ 0
 SR25
@@ -198,15 +187,15 @@ Wire Wire Line
 Wire Wire Line
 	2300 9750 2400 9750
 $Comp
-L 74xx:74HC595 U18
+L 74xx:74HC595 U7
 U 1 1 5F86605F
 P 1900 11050
-F 0 "U18" H 1900 11831 50  0000 C CNN
+F 0 "U7" H 1900 11831 50  0000 C CNN
 F 1 "74HC595" H 1900 11740 50  0000 C CNN
-F 2 "" H 1900 11050 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1900 11050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1900 11050 50  0001 C CNN
 	1    1900 11050
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 2500 10650 2    50   Input ~ 0
 SR49_ADDR3@FP2800A
@@ -218,12 +207,6 @@ Text GLabel 2500 10950 2    50   Input ~ 0
 SR52_ADDR6@FP2800A
 Text GLabel 2500 11050 2    50   Input ~ 0
 SR53_ADDR7@FP2800A
-Text GLabel 3450 11150 2    50   Input ~ 0
-SR54_LED_A
-Text GLabel 2900 11250 2    50   Input ~ 0
-SR55_LED_B
-Text GLabel 2350 11350 2    50   Input ~ 0
-SR56_LED_C
 Wire Wire Line
 	2500 10650 2300 10650
 Wire Wire Line
@@ -245,7 +228,7 @@ F 1 "LED C RED" V 2388 12128 50  0000 L CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 2350 12050 50  0001 C CNN
 F 3 "~" H 2350 12050 50  0001 C CNN
 	1    2350 12050
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D2
@@ -256,7 +239,7 @@ F 1 "LED B YELLOW" V 2938 12028 50  0000 L CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 2900 11950 50  0001 C CNN
 F 3 "~" H 2900 11950 50  0001 C CNN
 	1    2900 11950
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D3
@@ -267,40 +250,40 @@ F 1 "LED A GREEN" V 3488 11929 50  0000 L CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 3450 11850 50  0001 C CNN
 F 3 "~" H 3450 11850 50  0001 C CNN
 	1    3450 11850
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R6
+L Device:R R3
 U 1 1 5F8A7212
 P 2350 11750
-F 0 "R6" H 2420 11796 50  0000 L CNN
+F 0 "R3" H 2420 11796 50  0000 L CNN
 F 1 "180" H 2420 11705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 11750 50  0001 C CNN
 F 3 "~" H 2350 11750 50  0001 C CNN
 	1    2350 11750
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L Device:R R4
 U 1 1 5F8ADE83
 P 2900 11650
-F 0 "R7" H 2970 11696 50  0000 L CNN
+F 0 "R4" H 2970 11696 50  0000 L CNN
 F 1 "150" H 2970 11605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 11650 50  0001 C CNN
 F 3 "~" H 2900 11650 50  0001 C CNN
 	1    2900 11650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L Device:R R6
 U 1 1 5F8AE2E8
 P 3450 11550
-F 0 "R8" H 3520 11596 50  0000 L CNN
+F 0 "R6" H 3520 11596 50  0000 L CNN
 F 1 "120" H 3520 11505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3380 11550 50  0001 C CNN
 F 3 "~" H 3450 11550 50  0001 C CNN
 	1    3450 11550
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 11150 3450 11150
@@ -456,24 +439,6 @@ Wire Wire Line
 Wire Wire Line
 	1200 1250 1500 1250
 Connection ~ 1200 2850
-Text GLabel 1700 700  0    50   Input ~ 0
-VCC
-Text GLabel 2000 2450 2    50   Input ~ 0
-VCC
-Wire Wire Line
-	2000 2450 1900 2450
-Text GLabel 1800 4050 0    50   Input ~ 0
-VCC
-Wire Wire Line
-	1800 4050 1900 4050
-Text GLabel 1800 5650 0    50   Input ~ 0
-VCC
-Wire Wire Line
-	1800 5650 1900 5650
-Text GLabel 1800 10450 0    50   Input ~ 0
-VCC
-Wire Wire Line
-	1800 10450 1900 10450
 Text GLabel 2400 1450 2    50   Input ~ 0
 SR5
 Text GLabel 2400 1750 2    50   Input ~ 0
@@ -496,7 +461,7 @@ Wire Wire Line
 Wire Wire Line
 	1050 1650 1100 1650
 Wire Wire Line
-	1250 850  1100 850
+	1250 850  1100 850 
 Connection ~ 1100 1650
 Wire Wire Line
 	1100 1650 1350 1650
@@ -504,66 +469,66 @@ Wire Wire Line
 	1050 1550 1300 1550
 Connection ~ 1300 1550
 $Comp
-L Device:R R5
+L Device:R R1
 U 1 1 5FA50217
 P 1400 850
-F 0 "R5" V 1193 850 50  0000 C CNN
+F 0 "R1" V 1193 850 50  0000 C CNN
 F 1 "10K" V 1284 850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 850 50  0001 C CNN
 F 3 "~" H 1400 850 50  0001 C CNN
-	1    1400 850
-	0    1    1    0
+	1    1400 850 
+	0    1    1    0   
 $EndComp
 Wire Notes Line
-	4100 12300 4100 500
+	4100 12300 4100 500 
 Wire Notes Line
-	4100 500  600  500
+	4100 500  600  500 
 $Comp
-L Transistor_Array:ULN2803A U4
+L Transistor_Array:ULN2803A U16
 U 1 1 60389FAC
 P 7850 1200
-F 0 "U4" H 7850 1767 50  0000 C CNN
+F 0 "U16" H 7850 1767 50  0000 C CNN
 F 1 "ULN2803A" H 7850 1676 50  0000 C CNN
-F 2 "" H 7900 550 50  0001 L CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 7900 550 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 7950 1000 50  0001 C CNN
 	1    7850 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0112
+L power:GND #PWR012
 U 1 1 605BCABC
 P 7850 1950
-F 0 "#PWR0112" H 7850 1700 50  0001 C CNN
+F 0 "#PWR012" H 7850 1700 50  0001 C CNN
 F 1 "GND" H 7855 1777 50  0000 C CNN
 F 2 "" H 7850 1950 50  0001 C CNN
 F 3 "" H 7850 1950 50  0001 C CNN
 	1    7850 1950
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7850 1950 7850 1900
 $Comp
-L Transistor_Array:ULN2803A U5
+L Transistor_Array:ULN2803A U17
 U 1 1 60601118
 P 7850 2800
-F 0 "U5" H 7850 3367 50  0000 C CNN
+F 0 "U17" H 7850 3367 50  0000 C CNN
 F 1 "ULN2803A" H 7850 3276 50  0000 C CNN
-F 2 "" H 7900 2150 50  0001 L CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 7900 2150 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 7950 2600 50  0001 C CNN
 	1    7850 2800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
-Text GLabel 7350 2600 0    50   Output ~ 0
+Text GLabel 7350 2600 0    50   Input ~ 0
 SR48_ADDR2@FP2800A
-Text GLabel 7350 2700 0    50   Output ~ 0
+Text GLabel 7350 2700 0    50   Input ~ 0
 SR47_ADDR1@FP2800A
-Text GLabel 7350 2800 0    50   Output ~ 0
+Text GLabel 7350 2800 0    50   Input ~ 0
 SR46_B1@FP2800A
-Text GLabel 7350 2900 0    50   Output ~ 0
+Text GLabel 7350 2900 0    50   Input ~ 0
 SR45_B0@FP2800A
-Text GLabel 7350 3000 0    50   Output ~ 0
+Text GLabel 7350 3000 0    50   Input ~ 0
 SR44_A2@FP2800A
-Text GLabel 7350 3100 0    50   Output ~ 0
+Text GLabel 7350 3100 0    50   Input ~ 0
 SR43_A1@FP2800A
 Wire Wire Line
 	7350 2600 7450 2600
@@ -577,17 +542,17 @@ Wire Wire Line
 	7350 2900 7450 2900
 Wire Wire Line
 	7450 3100 7350 3100
-Text GLabel 8350 2600 2    50   Input ~ 0
+Text GLabel 8350 2600 2    50   Output ~ 0
 SR48_ADDR2@FP2800A_24V
-Text GLabel 8350 2700 2    50   Input ~ 0
+Text GLabel 8350 2700 2    50   Output ~ 0
 SR47_ADDR1@FP2800A_24V
-Text GLabel 8350 2800 2    50   Input ~ 0
+Text GLabel 8350 2800 2    50   Output ~ 0
 SR46_B1@FP2800A_24V
-Text GLabel 8350 2900 2    50   Input ~ 0
+Text GLabel 8350 2900 2    50   Output ~ 0
 SR45_B0@FP2800A_24V
-Text GLabel 8350 3000 2    50   Input ~ 0
+Text GLabel 8350 3000 2    50   Output ~ 0
 SR44_A2@FP2800A_24V
-Text GLabel 8350 3100 2    50   Input ~ 0
+Text GLabel 8350 3100 2    50   Output ~ 0
 SR43_A1@FP2800A_24V
 Wire Wire Line
 	8350 3100 8250 3100
@@ -606,36 +571,36 @@ Text GLabel 8350 2500 2    50   Input ~ 0
 Wire Wire Line
 	8350 2500 8250 2500
 $Comp
-L power:GND #PWR0113
+L power:GND #PWR013
 U 1 1 60601142
 P 7950 3500
-F 0 "#PWR0113" H 7950 3250 50  0001 C CNN
+F 0 "#PWR013" H 7950 3250 50  0001 C CNN
 F 1 "GND" H 7955 3327 50  0000 C CNN
 F 2 "" H 7950 3500 50  0001 C CNN
 F 3 "" H 7950 3500 50  0001 C CNN
 	1    7950 3500
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
-Text GLabel 7350 3200 0    50   Output ~ 0
+Text GLabel 7350 3200 0    50   Input ~ 0
 SR42_A0@FP2800A
-Text GLabel 7350 3300 0    50   Output ~ 0
+Text GLabel 7350 3300 0    50   Input ~ 0
 SR41_D@FP2800A
 Wire Wire Line
 	7450 3200 7350 3200
 Wire Wire Line
 	7350 3300 7450 3300
-Text GLabel 8350 3200 2    50   Input ~ 0
+Text GLabel 8350 3200 2    50   Output ~ 0
 SR42_A0@FP2800A_24V
-Text GLabel 8350 3300 2    50   Input ~ 0
+Text GLabel 8350 3300 2    50   Output ~ 0
 SR41_D@FP2800A_24V
 Wire Wire Line
 	8350 3300 8250 3300
 Wire Wire Line
 	8350 3200 8250 3200
 Wire Notes Line
-	6400 3600 6400 500
+	6400 3600 6400 500 
 Wire Notes Line
-	6400 500  9500 500
+	6400 500  9500 500 
 Wire Notes Line
 	9500 500  9500 3600
 Wire Notes Line
@@ -654,10 +619,10 @@ U 1 1 6184E01C
 P 5000 4300
 F 0 "U11" H 5000 4867 50  0000 C CNN
 F 1 "ULN2803A" H 5000 4776 50  0000 C CNN
-F 2 "" H 5050 3650 50  0001 L CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 5050 3650 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 5100 4100 50  0001 C CNN
 	1    5000 4300
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 4500 4100 0    50   Input ~ 0
 SR24
@@ -668,13 +633,13 @@ SR22
 Text GLabel 4500 4400 0    50   Input ~ 0
 SR21
 Text GLabel 5500 4100 2    50   Output ~ 0
-SR24_ROW_4_RST
+SR24_ROW4_RST
 Text GLabel 5500 4200 2    50   Output ~ 0
-SR23_ROW_3_RST
+SR23_ROW3_RST
 Text GLabel 5500 4300 2    50   Output ~ 0
-SR22_ROW_2_RST
+SR22_ROW2_RST
 Text GLabel 5500 4400 2    50   Output ~ 0
-SR21_ROW_1_RST
+SR21_ROW1_RST
 Text GLabel 5500 4000 2    50   Input ~ 0
 VS
 Wire Wire Line
@@ -712,15 +677,15 @@ Wire Wire Line
 Wire Wire Line
 	4500 4100 4600 4100
 $Comp
-L power:GND #PWR0118
+L power:GND #PWR07
 U 1 1 61CAF1A4
 P 5000 5000
-F 0 "#PWR0118" H 5000 4750 50  0001 C CNN
+F 0 "#PWR07" H 5000 4750 50  0001 C CNN
 F 1 "GND" H 5005 4827 50  0000 C CNN
 F 2 "" H 5000 5000 50  0001 C CNN
 F 3 "" H 5000 5000 50  0001 C CNN
 	1    5000 5000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_Array:ULN2803A U10
@@ -728,10 +693,10 @@ U 1 1 61CF76F6
 P 5000 2750
 F 0 "U10" H 5000 3317 50  0000 C CNN
 F 1 "ULN2803A" H 5000 3226 50  0000 C CNN
-F 2 "" H 5050 2100 50  0001 L CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 5050 2100 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 5100 2550 50  0001 C CNN
 	1    5000 2750
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 4500 2550 0    50   Input ~ 0
 SR32
@@ -750,21 +715,21 @@ SR26
 Text GLabel 4500 3250 0    50   Input ~ 0
 SR25
 Text GLabel 5500 2550 2    50   Output ~ 0
-SR32_ROW_12_RST
+SR32_ROW12_RST
 Text GLabel 5500 2650 2    50   Output ~ 0
-SR31_ROW_11_RST
+SR31_ROW11_RST
 Text GLabel 5500 2750 2    50   Output ~ 0
-SR30_ROW_10_RST
+SR30_ROW10_RST
 Text GLabel 5500 2850 2    50   Output ~ 0
-SR29_ROW_9_RST
+SR29_ROW9_RST
 Text GLabel 5500 2950 2    50   Output ~ 0
-SR28_ROW_8_RST
+SR28_ROW8_RST
 Text GLabel 5500 3050 2    50   Output ~ 0
-SR27_ROW_7_RST
+SR27_ROW7_RST
 Text GLabel 5500 3150 2    50   Output ~ 0
-SR26_ROW_6_RST
+SR26_ROW6_RST
 Text GLabel 5500 3250 2    50   Output ~ 0
-SR25_ROW_5_RST
+SR25_ROW5_RST
 Text GLabel 5500 2450 2    50   Input ~ 0
 VS
 Wire Wire Line
@@ -802,15 +767,15 @@ Wire Wire Line
 Wire Wire Line
 	4500 2550 4600 2550
 $Comp
-L power:GND #PWR0119
+L power:GND #PWR06
 U 1 1 61CF7A16
 P 5000 3450
-F 0 "#PWR0119" H 5000 3200 50  0001 C CNN
+F 0 "#PWR06" H 5000 3200 50  0001 C CNN
 F 1 "GND" H 5005 3277 50  0000 C CNN
 F 2 "" H 5000 3450 50  0001 C CNN
 F 3 "" H 5000 3450 50  0001 C CNN
 	1    5000 3450
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_Array:ULN2803A U9
@@ -818,10 +783,10 @@ U 1 1 61D4A238
 P 5000 1200
 F 0 "U9" H 5000 1767 50  0000 C CNN
 F 1 "ULN2803A" H 5000 1676 50  0000 C CNN
-F 2 "" H 5050 550 50  0001 L CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 5050 550 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 5100 1000 50  0001 C CNN
 	1    5000 1200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 4500 1000 0    50   Input ~ 0
 SR40
@@ -840,25 +805,25 @@ SR34
 Text GLabel 4500 1700 0    50   Input ~ 0
 SR33
 Text GLabel 5500 1000 2    50   Output ~ 0
-SR40_ROW_20_RST
+SR40_ROW20_RST
 Text GLabel 5500 1100 2    50   Output ~ 0
-SR39_ROW_19_RST
+SR39_ROW19_RST
 Text GLabel 5500 1200 2    50   Output ~ 0
-SR38_ROW_18_RST
+SR38_ROW18_RST
 Text GLabel 5500 1300 2    50   Output ~ 0
-SR37_ROW_17_RST
+SR37_ROW17_RST
 Text GLabel 5500 1400 2    50   Output ~ 0
-SR36_ROW_16_RST
+SR36_ROW16_RST
 Text GLabel 5500 1500 2    50   Output ~ 0
-SR35_ROW_15_RST
+SR35_ROW15_RST
 Text GLabel 5500 1600 2    50   Output ~ 0
-SR34_ROW_14_RST
+SR34_ROW14_RST
 Text GLabel 5500 1700 2    50   Output ~ 0
-SR33_ROW_13_RST
+SR33_ROW13_RST
 Text GLabel 5500 900  2    50   Input ~ 0
 VS
 Wire Wire Line
-	5500 900  5400 900
+	5500 900  5400 900 
 Wire Wire Line
 	5400 1000 5500 1000
 Wire Wire Line
@@ -892,15 +857,15 @@ Wire Wire Line
 Wire Wire Line
 	4500 1000 4600 1000
 $Comp
-L power:GND #PWR0120
+L power:GND #PWR05
 U 1 1 61D4A500
 P 5000 1900
-F 0 "#PWR0120" H 5000 1650 50  0001 C CNN
+F 0 "#PWR05" H 5000 1650 50  0001 C CNN
 F 1 "GND" H 5005 1727 50  0000 C CNN
 F 2 "" H 5000 1900 50  0001 C CNN
 F 3 "" H 5000 1900 50  0001 C CNN
 	1    5000 1900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 NoConn ~ 5500 4500
 NoConn ~ 5500 4600
@@ -913,9 +878,9 @@ NoConn ~ 4500 4600
 Wire Notes Line
 	4200 5250 6300 5250
 Wire Notes Line
-	6300 5250 6300 500
+	6300 5250 6300 500 
 Wire Notes Line
-	6300 500  4200 500
+	6300 500  4200 500 
 Wire Notes Line
 	4200 500  4200 5250
 Text Notes 4250 600  0    50   ~ 0
@@ -943,15 +908,15 @@ Wire Wire Line
 Wire Wire Line
 	6950 4600 6750 4600
 $Comp
-L power:GND #PWR0121
+L power:GND #PWR015
 U 1 1 63E45129
 P 8300 5100
-F 0 "#PWR0121" H 8300 4850 50  0001 C CNN
+F 0 "#PWR015" H 8300 4850 50  0001 C CNN
 F 1 "GND" H 8305 4927 50  0000 C CNN
 F 2 "" H 8300 5100 50  0001 C CNN
 F 3 "" H 8300 5100 50  0001 C CNN
 	1    8300 5100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8300 5100 8300 4900
@@ -976,15 +941,15 @@ SER
 Wire Wire Line
 	8050 4600 7950 4600
 $Comp
-L Device:R R1
+L Device:R R7
 U 1 1 64046BDD
 P 7450 5450
-F 0 "R1" V 7657 5450 50  0000 C CNN
+F 0 "R7" V 7657 5450 50  0000 C CNN
 F 1 "10K" V 7566 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7380 5450 50  0001 C CNN
 F 3 "~" H 7450 5450 50  0001 C CNN
 	1    7450 5450
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6950 5000 6950 5450
@@ -1010,17 +975,6 @@ Wire Notes Line
 	6400 5550 6400 3850
 Text Notes 6450 3950 0    50   ~ 0
 MCU wemos D1 mini (ESP8266-12F)
-$Comp
-L Connector:Conn_01x04_Female J5
-U 1 1 65947641
-P 8800 4150
-F 0 "J5" H 8828 4126 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 8828 4035 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8800 4150 50  0001 C CNN
-F 3 "~" H 8800 4150 50  0001 C CNN
-	1    8800 4150
-	1    0    0    -1
-$EndComp
 Wire Wire Line
 	6950 4400 6800 4400
 Wire Wire Line
@@ -1046,15 +1000,15 @@ Wire Wire Line
 Wire Wire Line
 	8100 4300 7950 4300
 $Comp
-L wemos:WeMos_D1_mini U1
+L flipdot-rescue:WeMos_D1_mini-wemos U15
 U 1 1 63B544EE
 P 7450 4650
-F 0 "U1" H 7450 5287 60  0000 C CNN
+F 0 "U15" H 7450 5287 60  0000 C CNN
 F 1 "WeMos_D1_mini" H 7450 5181 60  0000 C CNN
 F 2 "wemos:wemos-d1-mini-with-pin-header-and-connector" H 7450 5181 60  0001 C CNN
 F 3 "http://www.wemos.cc/Products/d1_mini.html" H 7450 5181 60  0001 C CNN
 	1    7450 4650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Notes Line
 	600  500  600  12300
@@ -1062,13 +1016,6 @@ Wire Notes Line
 	600  12300 4100 12300
 Wire Wire Line
 	7850 3500 7950 3500
-Wire Wire Line
-	1550 850  1700 850
-Wire Wire Line
-	1700 700  1700 850
-Connection ~ 1700 850
-Wire Wire Line
-	1700 850  1900 850
 Wire Wire Line
 	1100 850  1100 1650
 Wire Wire Line
@@ -1080,7 +1027,7 @@ Wire Wire Line
 Text GLabel 2400 9750 2    50   Input ~ 0
 SR48_ADDR2@FP2800A
 Text GLabel 2400 9650 2    50   Input ~ 0
-SR48_ADDR1@FP2800A
+SR47_ADDR1@FP2800A
 Text GLabel 2400 9550 2    50   Input ~ 0
 SR46_B1@FP2800A
 Text GLabel 2400 9450 2    50   Input ~ 0
@@ -1094,7 +1041,7 @@ SR42_A0@FP2800A
 Text GLabel 2400 9050 2    50   Input ~ 0
 SR41_D@FP2800A
 Wire Wire Line
-	8350 900  8250 900
+	8350 900  8250 900 
 Wire Wire Line
 	8350 1500 8250 1500
 Wire Wire Line
@@ -1109,17 +1056,17 @@ Wire Wire Line
 	8250 1000 8350 1000
 Text GLabel 8350 900  2    50   Input ~ 0
 24V
-Text GLabel 8350 1500 2    50   Input ~ 0
+Text GLabel 8350 1500 2    50   Output ~ 0
 SR49_ADDR3@FP2800A_24V
-Text GLabel 8350 1400 2    50   Input ~ 0
+Text GLabel 8350 1400 2    50   Output ~ 0
 SR50_ADDR4@FP2800A_24V
-Text GLabel 8350 1300 2    50   Input ~ 0
+Text GLabel 8350 1300 2    50   Output ~ 0
 SR51_ADDR5@FP2800A_24V
-Text GLabel 8350 1200 2    50   Input ~ 0
+Text GLabel 8350 1200 2    50   Output ~ 0
 SR52_ADDR6@FP2800A_24V
-Text GLabel 8350 1100 2    50   Input ~ 0
+Text GLabel 8350 1100 2    50   Output ~ 0
 SR53_ADDR7@FP2800A_24V
-Text GLabel 8350 1000 2    50   Input ~ 0
+Text GLabel 8350 1000 2    50   Output ~ 0
 EN_ADDR8@FP2800A_24V
 Wire Wire Line
 	7450 1500 7350 1500
@@ -1133,32 +1080,32 @@ Wire Wire Line
 	7450 1100 7350 1100
 Wire Wire Line
 	7350 1000 7450 1000
-Text GLabel 7350 1500 0    50   Output ~ 0
+Text GLabel 7350 1500 0    50   Input ~ 0
 SR49_ADDR3@FP2800A
-Text GLabel 7350 1400 0    50   Output ~ 0
+Text GLabel 7350 1400 0    50   Input ~ 0
 SR50_ADDR4@FP2800A
-Text GLabel 7350 1300 0    50   Output ~ 0
+Text GLabel 7350 1300 0    50   Input ~ 0
 SR51_ADDR5@FP2800A
-Text GLabel 7350 1200 0    50   Output ~ 0
+Text GLabel 7350 1200 0    50   Input ~ 0
 SR52_ADDR6@FP2800A
-Text GLabel 7350 1100 0    50   Output ~ 0
+Text GLabel 7350 1100 0    50   Input ~ 0
 SR53_ADDR7@FP2800A
-Text GLabel 7350 1000 0    50   Output ~ 0
+Text GLabel 7350 1000 0    50   Input ~ 0
 EN_ADDR8@FP2800A_5V
 Wire Wire Line
 	1900 11750 1050 11750
 Wire Wire Line
 	1050 11750 1050 11900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 6C6A24F4
 P 1050 11900
-F 0 "#PWR?" H 1050 11650 50  0001 C CNN
+F 0 "#PWR02" H 1050 11650 50  0001 C CNN
 F 1 "GND" H 1055 11727 50  0000 C CNN
 F 2 "" H 1050 11900 50  0001 C CNN
 F 3 "" H 1050 11900 50  0001 C CNN
 	1    1050 11900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1050 11750 1050 10150
@@ -1198,14 +1145,6 @@ Wire Wire Line
 	1050 8550 1900 8550
 Wire Wire Line
 	1050 10150 1050 8550
-Wire Wire Line
-	1800 8850 1900 8850
-Text GLabel 1800 8850 0    50   Input ~ 0
-VCC
-Wire Wire Line
-	1800 7250 1900 7250
-Text GLabel 1800 7250 0    50   Input ~ 0
-VCC
 Connection ~ 1200 7650
 Wire Wire Line
 	1200 7650 1200 6050
@@ -1251,15 +1190,15 @@ Wire Wire Line
 Wire Wire Line
 	2300 8350 2400 8350
 $Comp
-L 74xx:74HC595 U17
+L 74xx:74HC595 U6
 U 1 1 5F86603A
 P 1900 9450
-F 0 "U17" H 1900 10231 50  0000 C CNN
+F 0 "U6" H 1900 10231 50  0000 C CNN
 F 1 "74HC595" H 1900 10140 50  0000 C CNN
-F 2 "" H 1900 9450 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1900 9450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1900 9450 50  0001 C CNN
 	1    1900 9450
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 8150 2400 8150
@@ -1294,15 +1233,15 @@ SR34
 Text GLabel 2400 7450 2    50   Input ~ 0
 SR33
 $Comp
-L 74xx:74HC595 U16
+L 74xx:74HC595 U5
 U 1 1 5F865DD5
 P 1900 7850
-F 0 "U16" H 1900 8631 50  0000 C CNN
+F 0 "U5" H 1900 8631 50  0000 C CNN
 F 1 "74HC595" H 1900 8540 50  0000 C CNN
-F 2 "" H 1900 7850 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1900 7850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1900 7850 50  0001 C CNN
 	1    1900 7850
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Connection ~ 1100 14650
 Wire Wire Line
@@ -1333,15 +1272,15 @@ Wire Wire Line
 Text GLabel 1350 14350 0    50   Input ~ 0
 EN_POWER_RAILS
 $Comp
-L Connector:Conn_01x02_Male J6
+L Connector:Conn_01x02_Male J5
 U 1 1 5F88A9DD
 P 1900 13000
-F 0 "J6" V 1962 13044 50  0000 L CNN
+F 0 "J5" V 1962 13044 50  0000 L CNN
 F 1 "Conn_01x02_Male" V 2053 13044 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 13000 50  0001 C CNN
 F 3 "~" H 1900 13000 50  0001 C CNN
 	1    1900 13000
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	950  14000 950  14750
@@ -1362,21 +1301,16 @@ Wire Notes Line
 	3850 12450 3850 15150
 Wire Notes Line
 	600  12450 3850 12450
-Connection ~ 3400 14200
-Wire Wire Line
-	3400 14100 3400 14200
-Wire Wire Line
-	3350 14100 3400 14100
 $Comp
-L Connector:Conn_01x02_Male J7
+L Connector:Conn_01x02_Male J6
 U 1 1 5F8DE9DE
 P 2850 12900
-F 0 "J7" V 2912 12944 50  0000 L CNN
+F 0 "J6" V 2912 12944 50  0000 L CNN
 F 1 "Conn_01x02_Male" V 3003 12944 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2850 12900 50  0001 C CNN
 F 3 "~" H 2850 12900 50  0001 C CNN
 	1    2850 12900
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	850  14650 1100 14650
@@ -1419,10 +1353,10 @@ U 1 1 5F8AD9D4
 P 650 14650
 F 0 "J4" H 758 14831 50  0000 C CNN
 F 1 "EN_PWR" H 758 14740 50  0000 C CNN
-F 2 "" H 650 14650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 650 14650 50  0001 C CNN
 F 3 "~" H 650 14650 50  0001 C CNN
 	1    650  14650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1550 13450 1550 13900
@@ -1431,15 +1365,15 @@ Wire Wire Line
 Wire Wire Line
 	3400 13750 3400 14000
 $Comp
-L javl:FPF2700 U3
+L flipdot:FPF2702MX U8
 U 1 1 5F78E86C
 P 2650 14100
-F 0 "U3" H 2950 14525 50  0000 C CNN
-F 1 "FPF2700" H 2950 14434 50  0000 C CNN
+F 0 "U8" H 2950 14525 50  0000 C CNN
+F 1 "FPF2702MX" H 2950 14434 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2650 14100 50  0001 C CNN
 F 3 "" H 2650 14100 50  0001 C CNN
 	1    2650 14100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 2650 13300 0    50   Output ~ 0
 VS
@@ -1452,7 +1386,7 @@ F 1 "470K" H 2320 14355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 14400 50  0001 C CNN
 F 3 "~" H 2250 14400 50  0001 C CNN
 	1    2250 14400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C3
@@ -1463,37 +1397,37 @@ F 1 "22u" H 3665 14155 50  0000 L CNN
 F 2 "" H 3588 14050 50  0001 C CNN
 F 3 "~" H 3550 14200 50  0001 C CNN
 	1    3550 14200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3550 13900 3550 14050
 Connection ~ 3550 13900
 $Comp
-L power:GND #PWR0103
+L power:GND #PWR04
 U 1 1 5F79CF1F
 P 3400 14450
-F 0 "#PWR0103" H 3400 14200 50  0001 C CNN
+F 0 "#PWR04" H 3400 14200 50  0001 C CNN
 F 1 "GND" H 3405 14277 50  0000 C CNN
 F 2 "" H 3400 14450 50  0001 C CNN
 F 3 "" H 3400 14450 50  0001 C CNN
 	1    3400 14450
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3350 14000 3400 14000
 $Comp
-L power:GND #PWR0102
+L power:GND #PWR03
 U 1 1 5F7A9A31
-P 2150 14700
-F 0 "#PWR0102" H 2150 14450 50  0001 C CNN
-F 1 "GND" H 2155 14527 50  0000 C CNN
-F 2 "" H 2150 14700 50  0001 C CNN
-F 3 "" H 2150 14700 50  0001 C CNN
-	1    2150 14700
-	1    0    0    -1
+P 2100 14700
+F 0 "#PWR03" H 2100 14450 50  0001 C CNN
+F 1 "GND" H 2105 14527 50  0000 C CNN
+F 2 "" H 2100 14700 50  0001 C CNN
+F 3 "" H 2100 14700 50  0001 C CNN
+	1    2100 14700
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 14000 2550 14000
+	2100 14000 2550 14000
 Wire Wire Line
 	3350 14200 3400 14200
 Wire Wire Line
@@ -1501,15 +1435,15 @@ Wire Wire Line
 Wire Wire Line
 	3350 13900 3550 13900
 $Comp
-L Device:R R4
+L Device:R R5
 U 1 1 5F79B81A
 P 3400 13600
-F 0 "R4" V 3607 13600 50  0000 C CNN
+F 0 "R5" V 3607 13600 50  0000 C CNN
 F 1 "100K" V 3516 13600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 13600 50  0001 C CNN
 F 3 "~" H 3400 13600 50  0001 C CNN
 	1    3400 13600
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2250 14250 2250 14100
@@ -1524,25 +1458,12 @@ F 1 "100u/35v" H 1432 14195 50  0000 R CNN
 F 2 "" H 1588 14000 50  0001 C CNN
 F 3 "~" H 1550 14150 50  0001 C CNN
 	1    1550 14150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1800 13900 1800 14000
 Wire Wire Line
 	1800 13900 2550 13900
-Wire Wire Line
-	1800 14300 1800 14600
-Wire Wire Line
-	1800 14600 2150 14600
-Wire Wire Line
-	2150 14600 2150 14700
-Wire Wire Line
-	2150 14000 2150 14600
-Connection ~ 2150 14600
-Wire Wire Line
-	2250 14600 2150 14600
-Wire Wire Line
-	2250 14550 2250 14600
 $Comp
 L Device:C C2
 U 1 1 5F82C573
@@ -1552,23 +1473,18 @@ F 1 "100u" H 1915 14105 50  0000 L CNN
 F 2 "" H 1838 14000 50  0001 C CNN
 F 3 "~" H 1800 14150 50  0001 C CNN
 	1    1800 14150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1550 14300 1550 14600
-Wire Wire Line
-	1550 14600 1800 14600
-Connection ~ 1800 14600
 $Comp
-L power:GND #PWR0101
+L power:GND #PWR01
 U 1 1 5F839237
 P 950 14900
-F 0 "#PWR0101" H 950 14650 50  0001 C CNN
+F 0 "#PWR01" H 950 14650 50  0001 C CNN
 F 1 "GND" H 955 14727 50  0000 C CNN
 F 2 "" H 950 14900 50  0001 C CNN
 F 3 "" H 950 14900 50  0001 C CNN
 	1    950  14900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J1
@@ -1576,21 +1492,10 @@ U 1 1 5F83586A
 P 650 12800
 F 0 "J1" H 758 12981 50  0000 C CNN
 F 1 "3V3" H 758 12890 50  0000 C CNN
-F 2 "" H 650 12800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 650 12800 50  0001 C CNN
 F 3 "~" H 650 12800 50  0001 C CNN
 	1    650  12800
-	1    0    0    -1
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J3
-U 1 1 5F837EF7
-P 650 13900
-F 0 "J3" H 758 14081 50  0000 C CNN
-F 1 "24V" H 758 13990 50  0000 C CNN
-F 2 "" H 650 13900 50  0001 C CNN
-F 3 "~" H 650 13900 50  0001 C CNN
-	1    650  13900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J2
@@ -1598,10 +1503,10 @@ U 1 1 5F837B2D
 P 650 13250
 F 0 "J2" H 758 13431 50  0000 C CNN
 F 1 "5V" H 758 13340 50  0000 C CNN
-F 2 "" H 650 13250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 650 13250 50  0001 C CNN
 F 3 "~" H 650 13250 50  0001 C CNN
 	1    650  13250
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 2000 13300 2    50   Output ~ 0
 24V
@@ -1646,10 +1551,6 @@ NoConn ~ 5450 6050
 NoConn ~ 5450 6150
 NoConn ~ 5450 6250
 Wire Wire Line
-	4900 5750 5050 5750
-Text GLabel 4900 5750 0    50   Input ~ 0
-VS
-Wire Wire Line
 	4650 6350 4550 6350
 Wire Wire Line
 	4550 6450 4650 6450
@@ -1668,26 +1569,26 @@ Wire Wire Line
 Wire Wire Line
 	5050 6900 5050 6850
 $Comp
-L power:GND #PWR0117
+L power:GND #PWR08
 U 1 1 610D993A
 P 5050 6900
-F 0 "#PWR0117" H 5050 6650 50  0001 C CNN
+F 0 "#PWR08" H 5050 6650 50  0001 C CNN
 F 1 "GND" H 5055 6727 50  0000 C CNN
 F 2 "" H 5050 6900 50  0001 C CNN
 F 3 "" H 5050 6900 50  0001 C CNN
 	1    5050 6900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_Array:TBD62783A U6
+L Transistor_Array:TBD62783A U12
 U 1 1 610D9792
 P 5050 6250
-F 0 "U6" H 5050 6931 50  0000 C CNN
+F 0 "U12" H 5050 6931 50  0000 C CNN
 F 1 "TBD62783A" H 5050 6840 50  0000 C CNN
 F 2 "" H 5050 5700 50  0001 C CNN
 F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 4750 6650 50  0001 C CNN
 	1    5050 6250
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4900 7400 5050 7400
@@ -1760,29 +1661,27 @@ SR16_ROW16_SET
 Wire Wire Line
 	5050 8550 5050 8500
 $Comp
-L power:GND #PWR0116
+L power:GND #PWR09
 U 1 1 6109BDED
 P 5050 8550
-F 0 "#PWR0116" H 5050 8300 50  0001 C CNN
+F 0 "#PWR09" H 5050 8300 50  0001 C CNN
 F 1 "GND" H 5055 8377 50  0000 C CNN
 F 2 "" H 5050 8550 50  0001 C CNN
 F 3 "" H 5050 8550 50  0001 C CNN
 	1    5050 8550
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_Array:TBD62783A U7
+L Transistor_Array:TBD62783A U13
 U 1 1 6109BC93
 P 5050 7900
-F 0 "U7" H 5050 8581 50  0000 C CNN
+F 0 "U13" H 5050 8581 50  0000 C CNN
 F 1 "TBD62783A" H 5050 8490 50  0000 C CNN
 F 2 "" H 5050 7350 50  0001 C CNN
 F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 4750 8300 50  0001 C CNN
 	1    5050 7900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4900 9050 5050 9050
 Text GLabel 4900 9050 0    50   Input ~ 0
 VS
 Wire Wire Line
@@ -1842,26 +1741,26 @@ SR3_ROW3_SET
 Text GLabel 5550 9650 2    50   Output ~ 0
 SR4_ROW4_SET
 $Comp
-L power:GND #PWR0115
+L power:GND #PWR010
 U 1 1 60CEEE28
 P 5050 10150
-F 0 "#PWR0115" H 5050 9900 50  0001 C CNN
+F 0 "#PWR010" H 5050 9900 50  0001 C CNN
 F 1 "GND" H 5055 9977 50  0000 C CNN
 F 2 "" H 5050 10150 50  0001 C CNN
 F 3 "" H 5050 10150 50  0001 C CNN
 	1    5050 10150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_Array:TBD62783A U8
+L Transistor_Array:TBD62783A U14
 U 1 1 60CEAA19
 P 5050 9550
-F 0 "U8" H 5050 10231 50  0000 C CNN
+F 0 "U14" H 5050 10231 50  0000 C CNN
 F 1 "TBD62783A" H 5050 10140 50  0000 C CNN
 F 2 "" H 5050 9000 50  0001 C CNN
 F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 4750 9950 50  0001 C CNN
 	1    5050 9550
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Notes Line
 	4250 5400 4250 10400
@@ -1880,45 +1779,37 @@ Text Notes 6450 5950 0    50   ~ 0
 Wire Wire Line
 	8050 6100 7850 6100
 $Comp
-L power:GND #PWR0114
+L power:GND #PWR014
 U 1 1 60B903DD
 P 8050 6100
-F 0 "#PWR0114" H 8050 5850 50  0001 C CNN
+F 0 "#PWR014" H 8050 5850 50  0001 C CNN
 F 1 "GND" V 8055 5972 50  0000 R CNN
 F 2 "" H 8050 6100 50  0001 C CNN
 F 3 "" H 8050 6100 50  0001 C CNN
 	1    8050 6100
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7850 7750 7850 7700
-Wire Wire Line
-	7950 7750 7850 7750
-Text GLabel 7950 7750 2    50   Input ~ 0
-VCC
 Wire Wire Line
 	8750 7700 8700 7700
 Text GLabel 8750 7700 2    50   Input ~ 0
 VCC
 Wire Wire Line
 	8350 7700 8350 7400
-Wire Wire Line
-	8400 7700 8350 7700
 $Comp
-L Device:R R3
+L Device:R R8
 U 1 1 60B06F32
-P 8550 7700
-F 0 "R3" V 8343 7700 50  0000 C CNN
-F 1 "10K" V 8434 7700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 7700 50  0001 C CNN
-F 3 "~" H 8550 7700 50  0001 C CNN
-	1    8550 7700
-	0    1    1    0
+P 8500 7700
+F 0 "R8" V 8293 7700 50  0000 C CNN
+F 1 "10K" V 8384 7700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 7700 50  0001 C CNN
+F 3 "~" H 8500 7700 50  0001 C CNN
+	1    8500 7700
+	0    1    1    0   
 $EndComp
 Connection ~ 8350 6400
 Wire Wire Line
 	8550 6400 8350 6400
-Text GLabel 8550 6400 2    50   Input ~ 0
+Text GLabel 8450 6400 2    50   Input ~ 0
 EN_POWER_RAILS
 Wire Wire Line
 	8350 6500 8350 6400
@@ -1940,17 +1831,17 @@ Wire Wire Line
 	8350 7400 8350 7300
 Wire Wire Line
 	8450 7400 8350 7400
-Text GLabel 8450 7400 2    50   Input ~ 0
-EN_ADD8@FP2800A_5V
-Text GLabel 8450 7100 2    50   Input ~ 0
+Text GLabel 8450 7400 2    50   Output ~ 0
+EN_ADDR8@FP2800A_5V
+Text GLabel 8450 7100 2    50   Output ~ 0
 SER_5V
-Text GLabel 8450 7000 2    50   Input ~ 0
-OE_V5
-Text GLabel 8450 6900 2    50   Input ~ 0
+Text GLabel 8450 7000 2    50   Output ~ 0
+OE_5V
+Text GLabel 8450 6900 2    50   Output ~ 0
 RCLK_5V
-Text GLabel 8450 6800 2    50   Input ~ 0
+Text GLabel 8450 6800 2    50   Output ~ 0
 SRCLK_5V
-Text GLabel 8450 6700 2    50   Input ~ 0
+Text GLabel 8450 6700 2    50   Output ~ 0
 SRCLR_5V
 Wire Wire Line
 	7350 6700 7250 6700
@@ -1983,26 +1874,26 @@ SRCLK
 Text GLabel 7250 6700 0    50   Input ~ 0
 SRCLR
 $Comp
-L 74xx:74HC245 U2
+L 74xx:74HC245 U18
 U 1 1 607B86A7
 P 7850 6900
-F 0 "U2" H 7850 5919 50  0000 C CNN
+F 0 "U18" H 7850 5919 50  0000 C CNN
 F 1 "74HC245" H 7850 6010 50  0000 C CNN
-F 2 "" H 7850 6900 50  0001 C CNN
+F 2 "Package_SO:SOP-20_7.5x12.8mm_P1.27mm" H 7850 6900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 7850 6900 50  0001 C CNN
 	1    7850 6900
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR016
 U 1 1 65B96AAD
 P 8650 13600
-F 0 "#PWR?" H 8650 13350 50  0001 C CNN
+F 0 "#PWR016" H 8650 13350 50  0001 C CNN
 F 1 "GND" H 8655 13427 50  0000 C CNN
 F 2 "" H 8650 13600 50  0001 C CNN
 F 3 "" H 8650 13600 50  0001 C CNN
 	1    8650 13600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9400 13600 8650 13600
@@ -2170,25 +2061,25 @@ Wire Wire Line
 Wire Wire Line
 	9350 11600 9400 11600
 Text GLabel 10000 13500 2    50   Input ~ 0
-SR40_ROW20_SET
+SR40_ROW20_RST
 Text GLabel 10000 13400 2    50   Input ~ 0
-SR38_ROW18_SET
+SR38_ROW18_RST
 Text GLabel 10000 13300 2    50   Input ~ 0
-SR36_ROW16_SET
+SR36_ROW16_RST
 Text GLabel 10000 13200 2    50   Input ~ 0
-SR34_ROW14_SET
+SR34_ROW14_RST
 Text GLabel 10000 13100 2    50   Input ~ 0
-SR32_ROW12_SET
+SR32_ROW12_RST
 Text GLabel 10000 13000 2    50   Input ~ 0
-SR30_ROW10_SET
+SR30_ROW10_RST
 Text GLabel 10000 12900 2    50   Input ~ 0
-SR28_ROW8_SET
+SR28_ROW8_RST
 Text GLabel 10000 12800 2    50   Input ~ 0
-SR26_ROW6_SET
+SR26_ROW6_RST
 Text GLabel 10000 12700 2    50   Input ~ 0
-SR24_ROW4_SET
+SR24_ROW4_RST
 Text GLabel 10000 12600 2    50   Input ~ 0
-SR22_ROW2_SET
+SR22_ROW2_RST
 Text GLabel 10000 12500 2    50   Input ~ 0
 SR20_ROW20_SET
 Text GLabel 10000 12400 2    50   Input ~ 0
@@ -2210,36 +2101,36 @@ SR4_ROW4_SET
 Text GLabel 10000 11600 2    50   Input ~ 0
 SR2_ROW2_SET
 $Comp
-L Connector_Generic:Conn_02x30_Odd_Even J?
+L Connector_Generic:Conn_02x30_Odd_Even J9
 U 1 1 65B96A65
 P 9600 13000
-F 0 "J?" H 9650 14617 50  0000 C CNN
+F 0 "J9" H 9650 14617 50  0000 C CNN
 F 1 "Conn_02x30_Odd_Even" H 9650 14526 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x30_P2.54mm_Vertical" H 9600 13000 50  0001 C CNN
 F 3 "~" H 9600 13000 50  0001 C CNN
 	1    9600 13000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 9350 13500 0    50   Input ~ 0
-SR39_ROW19_SET
+SR39_ROW19_RST
 Text GLabel 9350 13400 0    50   Input ~ 0
-SR37_ROW17_SET
+SR37_ROW17_RST
 Text GLabel 9350 13300 0    50   Input ~ 0
-SR35_ROW15_SET
+SR35_ROW15_RST
 Text GLabel 9350 13200 0    50   Input ~ 0
-SR33_ROW13_SET
+SR33_ROW13_RST
 Text GLabel 9350 13100 0    50   Input ~ 0
-SR31_ROW11_SET
+SR31_ROW11_RST
 Text GLabel 9350 13000 0    50   Input ~ 0
-SR29_ROW9_SET
+SR29_ROW9_RST
 Text GLabel 9350 12900 0    50   Input ~ 0
-SR27_ROW7_SET
+SR27_ROW7_RST
 Text GLabel 9350 12800 0    50   Input ~ 0
-SR25_ROW5_SET
+SR25_ROW5_RST
 Text GLabel 9350 12700 0    50   Input ~ 0
-SR23_ROW3_SET
+SR23_ROW3_RST
 Text GLabel 9350 12600 0    50   Input ~ 0
-SR21_ROW1_SET
+SR21_ROW1_RST
 Text GLabel 9350 12500 0    50   Input ~ 0
 SR19_ROW19_SET
 Text GLabel 9350 12400 0    50   Input ~ 0
@@ -2253,7 +2144,7 @@ SR11_ROW11_SET
 Text GLabel 9350 12000 0    50   Input ~ 0
 SR9_ROW9_SET
 Text GLabel 9350 11900 0    50   Input ~ 0
-SR7_ROW_7_SET
+SR7_ROW7_SET
 Text GLabel 9350 11800 0    50   Input ~ 0
 SR5_ROW5_SET
 Text GLabel 9350 11700 0    50   Input ~ 0
@@ -2344,15 +2235,15 @@ Wire Wire Line
 Text GLabel 6350 13700 0    50   Input ~ 0
 24V
 $Comp
-L power:GND #PWR0111
+L power:GND #PWR011
 U 1 1 601419BE
 P 5650 13600
-F 0 "#PWR0111" H 5650 13350 50  0001 C CNN
+F 0 "#PWR011" H 5650 13350 50  0001 C CNN
 F 1 "GND" H 5655 13427 50  0000 C CNN
 F 2 "" H 5650 13600 50  0001 C CNN
 F 3 "" H 5650 13600 50  0001 C CNN
 	1    5650 13600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6400 13600 5650 13600
@@ -2437,25 +2328,25 @@ Wire Wire Line
 Wire Wire Line
 	6350 11600 6400 11600
 Text GLabel 7000 13500 2    50   Input ~ 0
-SR40_ROW20_SET
+SR40_ROW20_RST
 Text GLabel 7000 13400 2    50   Input ~ 0
-SR38_ROW18_SET
+SR38_ROW18_RST
 Text GLabel 7000 13300 2    50   Input ~ 0
-SR36_ROW16_SET
+SR36_ROW16_RST
 Text GLabel 7000 13200 2    50   Input ~ 0
-SR34_ROW14_SET
+SR34_ROW14_RST
 Text GLabel 7000 13100 2    50   Input ~ 0
-SR32_ROW12_SET
+SR32_ROW12_RST
 Text GLabel 7000 13000 2    50   Input ~ 0
-SR30_ROW10_SET
+SR30_ROW10_RST
 Text GLabel 7000 12900 2    50   Input ~ 0
-SR28_ROW8_SET
+SR28_ROW8_RST
 Text GLabel 7000 12800 2    50   Input ~ 0
-SR26_ROW6_SET
+SR26_ROW6_RST
 Text GLabel 7000 12700 2    50   Input ~ 0
-SR24_ROW4_SET
+SR24_ROW4_RST
 Text GLabel 7000 12600 2    50   Input ~ 0
-SR22_ROW2_SET
+SR22_ROW2_RST
 Text GLabel 7000 12500 2    50   Input ~ 0
 SR20_ROW20_SET
 Text GLabel 7000 12400 2    50   Input ~ 0
@@ -2477,36 +2368,36 @@ SR4_ROW4_SET
 Text GLabel 7000 11600 2    50   Input ~ 0
 SR2_ROW2_SET
 $Comp
-L Connector_Generic:Conn_02x30_Odd_Even J8
+L Connector_Generic:Conn_02x30_Odd_Even J7
 U 1 1 5FBEA90B
 P 6600 13000
-F 0 "J8" H 6650 14617 50  0000 C CNN
+F 0 "J7" H 6650 14617 50  0000 C CNN
 F 1 "Conn_02x30_Odd_Even" H 6650 14526 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x30_P2.54mm_Vertical" H 6600 13000 50  0001 C CNN
 F 3 "~" H 6600 13000 50  0001 C CNN
 	1    6600 13000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 6350 13500 0    50   Input ~ 0
-SR39_ROW19_SET
+SR39_ROW19_RST
 Text GLabel 6350 13400 0    50   Input ~ 0
-SR37_ROW17_SET
+SR37_ROW17_RST
 Text GLabel 6350 13300 0    50   Input ~ 0
-SR35_ROW15_SET
+SR35_ROW15_RST
 Text GLabel 6350 13200 0    50   Input ~ 0
-SR33_ROW13_SET
+SR33_ROW13_RST
 Text GLabel 6350 13100 0    50   Input ~ 0
-SR31_ROW11_SET
+SR31_ROW11_RST
 Text GLabel 6350 13000 0    50   Input ~ 0
-SR29_ROW9_SET
+SR29_ROW9_RST
 Text GLabel 6350 12900 0    50   Input ~ 0
-SR27_ROW7_SET
+SR27_ROW7_RST
 Text GLabel 6350 12800 0    50   Input ~ 0
-SR25_ROW5_SET
+SR25_ROW5_RST
 Text GLabel 6350 12700 0    50   Input ~ 0
-SR23_ROW3_SET
+SR23_ROW3_RST
 Text GLabel 6350 12600 0    50   Input ~ 0
-SR21_ROW1_SET
+SR21_ROW1_RST
 Text GLabel 6350 12500 0    50   Input ~ 0
 SR19_ROW19_SET
 Text GLabel 6350 12400 0    50   Input ~ 0
@@ -2520,11 +2411,146 @@ SR11_ROW11_SET
 Text GLabel 6350 12000 0    50   Input ~ 0
 SR9_ROW9_SET
 Text GLabel 6350 11900 0    50   Input ~ 0
-SR7_ROW_7_SET
+SR7_ROW7_SET
 Text GLabel 6350 11800 0    50   Input ~ 0
 SR5_ROW5_SET
 Text GLabel 6350 11700 0    50   Input ~ 0
 SR3_ROW3_SET
 Text GLabel 6350 11600 0    50   Input ~ 0
 SR1_ROW1_SET
+Text Notes 3500 11200 0    50   ~ 0
+SR54_LED_A
+Text Notes 2950 11300 0    50   ~ 0
+SR55_LED_B
+Text Notes 2400 11400 0    50   ~ 0
+SR56_LED_C
+NoConn ~ 2300 11550
+Wire Wire Line
+	5050 9050 4900 9050
+Text GLabel 4950 5750 0    50   Input ~ 0
+VS
+Wire Wire Line
+	5050 5750 4950 5750
+$Comp
+L power:GND #PWR0101
+U 1 1 5FBD9074
+P 1800 14700
+F 0 "#PWR0101" H 1800 14450 50  0001 C CNN
+F 1 "GND" H 1805 14527 50  0000 C CNN
+F 2 "" H 1800 14700 50  0001 C CNN
+F 3 "" H 1800 14700 50  0001 C CNN
+	1    1800 14700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FBD91DE
+P 1550 14700
+F 0 "#PWR0102" H 1550 14450 50  0001 C CNN
+F 1 "GND" H 1555 14527 50  0000 C CNN
+F 2 "" H 1550 14700 50  0001 C CNN
+F 3 "" H 1550 14700 50  0001 C CNN
+	1    1550 14700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FBD9324
+P 2250 14700
+F 0 "#PWR0103" H 2250 14450 50  0001 C CNN
+F 1 "GND" H 2255 14527 50  0000 C CNN
+F 2 "" H 2250 14700 50  0001 C CNN
+F 3 "" H 2250 14700 50  0001 C CNN
+	1    2250 14700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 14300 1550 14700
+Wire Wire Line
+	1800 14300 1800 14700
+Wire Wire Line
+	2250 14550 2250 14700
+Wire Wire Line
+	2100 14000 2100 14700
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5F837EF7
+P 650 13900
+F 0 "J3" H 758 14081 50  0000 C CNN
+F 1 "24V" H 758 13990 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 650 13900 50  0001 C CNN
+F 3 "~" H 650 13900 50  0001 C CNN
+	1    650  13900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 850  2    50   Input ~ 0
+VCC
+$Comp
+L 74xx:74HC595 U2
+U 1 1 5F846E39
+P 1900 3050
+F 0 "U2" H 1900 3831 50  0000 C CNN
+F 1 "74HC595" H 1900 3740 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1900 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1900 3050 50  0001 C CNN
+	1    1900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2450 3350 4050
+Wire Wire Line
+	3350 4050 1900 4050
+Wire Wire Line
+	3350 5650 3350 4050
+Wire Wire Line
+	3350 5650 1900 5650
+Connection ~ 3350 4050
+Wire Wire Line
+	3350 7250 3350 5650
+Wire Wire Line
+	3350 7250 1900 7250
+Connection ~ 3350 5650
+Wire Wire Line
+	3350 8850 3350 7250
+Wire Wire Line
+	3350 8850 1900 8850
+Connection ~ 3350 7250
+Wire Wire Line
+	3350 10450 3350 8850
+Wire Wire Line
+	3350 10450 1900 10450
+Connection ~ 3350 8850
+Wire Wire Line
+	1900 2450 3350 2450
+Connection ~ 3350 2450
+Wire Wire Line
+	1900 850  3350 850 
+Wire Wire Line
+	3350 850  3350 2450
+Connection ~ 1900 850 
+Wire Wire Line
+	3500 850  3350 850 
+Connection ~ 3350 850 
+Wire Wire Line
+	1550 850  1900 850 
+Wire Wire Line
+	7850 7800 8700 7800
+Wire Wire Line
+	7850 7700 7850 7800
+Wire Wire Line
+	8700 7700 8700 7800
+Connection ~ 8700 7700
+Wire Wire Line
+	8700 7700 8650 7700
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 6065E5F2
+P 8800 4150
+F 0 "J8" H 8880 4142 50  0000 L CNN
+F 1 "Conn_01x04" H 8880 4051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8800 4150 50  0001 C CNN
+F 3 "~" H 8800 4150 50  0001 C CNN
+	1    8800 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
