@@ -7,5 +7,4 @@ Changes I have made / are planning on making are:
 
   * [X] Made in the open source Kicad instead of Eagle
   * [X] Replaced the TBD62783A which a A2982 as it seams easier to find
-  * [X] Adding a second BROSE connector for daisy chaining
   * [ ] On-board power conversion instead of needing separate inputs for 3.3V, 5V and 24V
