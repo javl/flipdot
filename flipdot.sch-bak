@@ -2286,4 +2286,15 @@ F 3 "http://www.wemos.cc/Products/d1_mini.html" H 7450 5181 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6950 5000
+$Comp
+L flipdot:5V_buck_converter U19
+U 1 1 5F9259D9
+P 5450 11150
+F 0 "U19" H 5375 11175 50  0000 C CNN
+F 1 "5V_buck_converter" H 5375 11084 50  0000 C CNN
+F 2 "" H 5450 11150 50  0001 C CNN
+F 3 "" H 5450 11150 50  0001 C CNN
+	1    5450 11150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

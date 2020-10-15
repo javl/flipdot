@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name wemos)(type KiCad)(uri /home/javl/Documents/kicad/github_libs/wemos-d1-mini-kicad/modules/wemos-d1-mini.pretty)(options "")(descr ""))
+  (lib (name flipdot)(type KiCad)(uri ${KIPRJMOD}/flipdot.pretty)(options "")(descr ""))
 )
