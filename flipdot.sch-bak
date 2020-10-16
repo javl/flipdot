@@ -2289,12 +2289,75 @@ Connection ~ 6950 5000
 $Comp
 L flipdot:5V_buck_converter U19
 U 1 1 5F9259D9
-P 5450 11150
-F 0 "U19" H 5375 11175 50  0000 C CNN
-F 1 "5V_buck_converter" H 5375 11084 50  0000 C CNN
-F 2 "" H 5450 11150 50  0001 C CNN
-F 3 "" H 5450 11150 50  0001 C CNN
-	1    5450 11150
+P 6250 13150
+F 0 "U19" H 6175 13175 50  0000 C CNN
+F 1 "5V_buck_converter" H 6175 13084 50  0000 C CNN
+F 2 "flipdot:5v_buck_converter" H 6250 13150 50  0001 C CNN
+F 3 "" H 6250 13150 50  0001 C CNN
+	1    6250 13150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 13250 1    50   Input ~ 0
+24V
+$Comp
+L power:GND #PWR0104
+U 1 1 5F93A3EF
+P 6200 13850
+F 0 "#PWR0104" H 6200 13600 50  0001 C CNN
+F 1 "GND" H 6205 13677 50  0000 C CNN
+F 2 "" H 6200 13850 50  0001 C CNN
+F 3 "" H 6200 13850 50  0001 C CNN
+	1    6200 13850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 13550 5700 13550
+Wire Wire Line
+	5700 13550 5700 13750
+Wire Wire Line
+	5700 13750 6200 13750
+Wire Wire Line
+	6700 13750 6700 13550
+Wire Wire Line
+	6700 13550 6600 13550
+Wire Wire Line
+	6200 13850 6200 13750
+Connection ~ 6200 13750
+Wire Wire Line
+	6200 13750 6700 13750
+Text GLabel 6700 13350 2    50   Output ~ 0
+VCC
+Wire Wire Line
+	6700 13350 6600 13350
+Wire Wire Line
+	5400 13350 5700 13350
+Wire Wire Line
+	5700 13250 5700 13350
+Connection ~ 5700 13350
+Wire Wire Line
+	5700 13350 5800 13350
+Wire Wire Line
+	5400 13550 5700 13550
+Connection ~ 5700 13550
+Wire Notes Line
+	3900 12800 6950 12800
+Wire Notes Line
+	6950 12800 6950 14150
+Wire Notes Line
+	6950 14150 3900 14150
+Wire Notes Line
+	3900 14150 3900 12800
+Text Notes 3950 12900 0    50   ~ 0
+Power Supply In and to 5V (VCC)
+$Comp
+L Connector:Barrel_Jack J?
+U 1 1 5FFB73BB
+P 5100 13450
+F 0 "J?" H 5157 13775 50  0000 C CNN
+F 1 "Barrel_Jack" H 5157 13684 50  0000 C CNN
+F 2 "" H 5150 13410 50  0001 C CNN
+F 3 "~" H 5150 13410 50  0001 C CNN
+	1    5100 13450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
