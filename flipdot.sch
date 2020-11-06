@@ -2222,7 +2222,7 @@ U 1 1 624F93F3
 P 5050 9550
 F 0 "U14" H 5050 10231 50  0000 C CNN
 F 1 "TBD62783A" H 5050 10140 50  0000 C CNN
-F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 5050 9000 50  0001 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 5050 9000 50  0001 C CNN
 F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 4750 9950 50  0001 C CNN
 	1    5050 9550
 	1    0    0    -1  
@@ -2233,7 +2233,7 @@ U 1 1 624F9C4E
 P 5050 7900
 F 0 "U13" H 5050 8581 50  0000 C CNN
 F 1 "TBD62783A" H 5050 8490 50  0000 C CNN
-F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 5050 7350 50  0001 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 5050 7350 50  0001 C CNN
 F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 4750 8300 50  0001 C CNN
 	1    5050 7900
 	1    0    0    -1  
@@ -2244,7 +2244,7 @@ U 1 1 624FA76A
 P 5050 6250
 F 0 "U12" H 5050 6931 50  0000 C CNN
 F 1 "TBD62783A" H 5050 6840 50  0000 C CNN
-F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 5050 5700 50  0001 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 5050 5700 50  0001 C CNN
 F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30523&prodName=TBD62783APG" H 4750 6650 50  0001 C CNN
 	1    5050 6250
 	1    0    0    -1  
